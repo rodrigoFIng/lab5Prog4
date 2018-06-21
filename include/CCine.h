@@ -2,6 +2,7 @@
 #define CCINE_H
 
 #include "Cine.h"
+#include "../include/DtCine.h"
 #include "DtFuncion.h"
 #include "Funcion.h"
 #include "../interfaces/ICollection.h"
@@ -46,8 +47,9 @@ public:
 	//setters
 	void setFuncionSeleccionada(Funcion * fs);
 	void setCineSeleccionado(Cine*);
+	ICollection* getCinesRegistrados();
+	void setSalas(ICollection*, DtCine*);
 	//constructores y destructor
-
 	static CCine *getInstancia();
 	~CCine();
 };
