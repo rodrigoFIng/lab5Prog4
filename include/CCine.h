@@ -50,7 +50,6 @@ public:
 	ICollection* getCinesRegistrados();
 	void setSalas(ICollection*, DtCine*);
 	//constructores y destructor
-
 	static CCine *getInstancia();
 	~CCine();
 };
